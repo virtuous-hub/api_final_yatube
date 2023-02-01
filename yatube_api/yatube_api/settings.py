@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import os
 from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -62,6 +62,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+os.path.join(BASE_DIR, 'db.sqlite3')
 
 AUTH_PASSWORD_VALIDATORS = [
     {
