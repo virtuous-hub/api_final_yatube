@@ -56,7 +56,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'yatube_api.wsgi.application'
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -102,10 +101,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
 
-SIMPLE_JWT = {
-   'ACCESS_TOKEN_LIFETIME': timedelta(
-       days=1),
-   'AUTH_HEADER_TYPES': ('Bearer',),
-}
+SIMPLE_JWT = {'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+              'AUTH_HEADER_TYPES': ('Bearer',),
+              }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
