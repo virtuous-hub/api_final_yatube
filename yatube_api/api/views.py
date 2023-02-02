@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from .permissions import IsAuthorOrReadOnly, ReadOnly
 from .serializers import CommentSerializer, FollowSerializer, GroupSerializer
 from .serializers import PostSerializer
-from posts.models import Comment, Follow, Group, Post, User
+from posts.models import Comment, Follow, Group, Post
 
 
 class PostOrGetViewSet(mixins.CreateModelMixin, mixins.ListModelMixin,
